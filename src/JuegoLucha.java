@@ -41,11 +41,11 @@ public class JuegoLucha {
         System.out.print("Introduce el nombre del jugador 2: ");
         String nombre2 = scanner.nextLine();
 
-        // Implementación del patrón: Creamos personajes base
+        // Creamos personajes base
         IPersonaje j1 = new PersonajeBase(nombre1);
         IPersonaje j2 = new PersonajeBase(nombre2);
 
-        // Decoramos dinámicamente al jugador 1 con un arma que da 15 de daño extra
+        // Colocamos al jugador 1 con un arma que da 15 de daño extra
         System.out.println("¡" + nombre1 + " ha encontrado una espada mágica!");
         j1 = new ArmaDecorator(j1, 15);
 
